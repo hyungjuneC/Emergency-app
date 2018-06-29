@@ -1,4 +1,4 @@
-package com.project9.databasetest;
+package com.project9.databasetest.database;
 
 import android.provider.BaseColumns;
 

@@ -1,4 +1,4 @@
-package com.project9.databasetest;
+package com.project9.databasetest.database;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.project9.databasetest.*;
 
 import java.util.ArrayList;
 

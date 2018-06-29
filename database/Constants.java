@@ -1,4 +1,4 @@
-package com.project9.databasetest;
+package com.project9.databasetest.database;
 
 /**
  * Created by ChoiMinSu on 2016. 3. 29..

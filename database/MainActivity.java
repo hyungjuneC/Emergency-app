@@ -1,6 +1,7 @@
-package com.project9.databasetest;
+package com.project9.databasetest.database;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.project9.databasetest.*;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -22,15 +25,19 @@ public class MainActivity extends Activity {
     private ArrayList<InfoClass> mInfoArr;
     private CustomAdapter mAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         setLayout();
+        SharedPreferences pref = getSharedPreferences("pref",MODE_PRIVATE);
+        SharedPreferences.Editor edit = pref.edit();
 
         //데이터베이스 생성(파라메터 Context) 및 오픈
-        mDbOpenHelper = new DbOpenHelper(this);
+        if (pref.getInt("intkey", 0) == 0){
+            mDbOpenHelper = new DbOpenHelper(this);
         try {
             mDbOpenHelper.open();
         } catch (SQLException e) {
@@ -86,6 +93,12 @@ public class MainActivity extends Activity {
                 return false;
             }
         });
+        edit.putInt("intkey", 1);
+        edit.commit();
+    }
+    else{
+
+        }
 
     }
 

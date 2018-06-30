@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#ff0000" >
+
+
+        <FrameLayout
+            android:id="@+id/fram_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/first_des"
+                    android:layout_width="340dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+
+                    android:text="목적지"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="340dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@android:color/white"
+                    android:drawableTop="@drawable/line"
+                    android:drawableLeft="@drawable/picker_address"
+                    android:text="주소"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/call"
+                    android:layout_width="340dp"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="115dp"
+                    android:background="@android:color/white"
+                    android:drawableLeft="@drawable/call"
+                    android:text="전화"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignBaseline="@+id/first_des"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="57dp"
+                    android:background="@drawable/button_more"
+                    android:paddingRight="30dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/car_button"
+                android:layout_width="342dp"
+                android:layout_height="92dp"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/extended_fab" />
+
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

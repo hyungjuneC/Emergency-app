@@ -1,5 +1,5 @@
 # HealRo
-![내가 원할 때, 바로 가는 응급실 앱](C:\Users\32164640\Desktop\openhack\samsung_s8_mockup_2.psd)
+![내가 원할 때, 바로 가는 응급실 앱](/main.png)
 ***
 
 ### App Service

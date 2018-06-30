@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.whwkd.tmapexample.listActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:orientation="vertical"
+        android:background="#ff5252">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="101dp"
+            android:lineSpacingExtra="8sp"
+            android:text="아주대병원"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="130dp"
+            android:text="경기 수원시 영통구 월드컵로 164 아주대학병원"
+            android:textColor="#a6ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="293dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="123dp"
+            android:lineSpacingExtra="14sp"
+            android:text="1.62km"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="57dp"
+            android:lineSpacingExtra="14sp"
+            android:text="현재 선택 응급실"
+            android:textColor="#f5f5f5"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="57dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/location"
+            android:paddingBottom="14.8dp"
+            android:paddingLeft="9.7dp"
+            android:paddingRight="9.7dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="vertical"
+        android:background="#ffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:lineSpacingExtra="14sp"
+            android:textColor="#61000000"
+            android:textSize="14sp"
+            android:text="그 외 주변 응급실" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:orientation="vertical"
+        tools:context="com.example.whwkd.tmapexample.listActivity">
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
